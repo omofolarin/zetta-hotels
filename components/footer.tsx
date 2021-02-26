@@ -16,7 +16,7 @@ import {
 import CallOutlinedIcon from "@material-ui/icons/CallOutlined";
 import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
-import theme from "../pages/theme";
+import theme from "../theme";
 
 export default function Footer() {
   const isHandheld = useMediaQuery(theme.breakpoints.down("sm"));

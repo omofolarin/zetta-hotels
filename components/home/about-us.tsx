@@ -19,7 +19,7 @@ import {
 
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import BusinessIcon from "@material-ui/icons/Business";
-import theme from "../../pages/theme";
+import theme from "../../theme";
 
 const useStyles = makeStyles((theme) =>
   createStyles({

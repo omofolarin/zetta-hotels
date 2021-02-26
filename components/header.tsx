@@ -5,7 +5,7 @@ import { Box, Container, Hidden, Link, useMediaQuery } from "@material-ui/core";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-import theme from "../pages/theme";
+import theme from "../theme";
 
 export default function Header() {
   const isNotHandHeld = useMediaQuery(theme.breakpoints.up("lg"));

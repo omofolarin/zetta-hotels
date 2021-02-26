@@ -16,7 +16,7 @@ import {
 } from "@material-ui/core";
 
 import SendIcon from "@material-ui/icons/Send";
-import theme from "../pages/theme";
+import theme from "../theme";
 
 const useStyles = makeStyles((theme) =>
   createStyles({
