@@ -4,8 +4,12 @@ import {
   Avatar,
   Box,
   Button,
+  Card,
+  CardContent,
+  CardMedia,
   Container,
   Grid,
+  IconButton,
   Paper,
   Typography,
   createStyles,
@@ -53,6 +57,19 @@ const useStyles = makeStyles((theme) =>
       width: "30%",
       lineHeight: 1.3,
       //   width: "80%",
+
+      [theme.breakpoints.down("sm")]: {
+        fontSize: "2em",
+        width: "100%",
+      },
+    },
+
+    restaurantTitle: {
+      fontSize: "3em",
+      fontWeight: 600,
+      fontFamily: "Poppins",
+      lineHeight: 1.3,
+      width: "38%",
 
       [theme.breakpoints.down("sm")]: {
         fontSize: "2em",
@@ -389,6 +406,1019 @@ export function Testimonial() {
           ></div>
         </Grid>
       </Grid>
+    </div>
+  );
+}
+
+export function Restaurant() {
+  const classes = useStyles();
+
+  return (
+    <div style={{ margin: "8px 0" }}>
+      <Container>
+        <Typography
+          variant="caption"
+          color="primary"
+          style={{ fontWeight: 800 }}
+          gutterBottom
+        >
+          Restaurant
+        </Typography>
+
+        <Typography
+          variant="h2"
+          color="initial"
+          className={[classes.restaurantTitle].join(" ")}
+          gutterBottom
+        >
+          Explore our menu and eat what you want
+        </Typography>
+
+        <Box margin="64px 0">
+          <Grid container spacing={3}>
+            <Grid item sm={12} lg={6}>
+              <Card
+                style={{
+                  display: "flex",
+                  width: "100%",
+                  boxShadow: "unset",
+                }}
+              >
+                <CardMedia
+                  image="/images/sheelah-brennan-UaeVmc51Ttw-unsplash.png"
+                  style={{ width: "180px", height: "200px" }}
+                />
+                <CardContent
+                  style={{ backgroundColor: "#F8F8F8", boxShadow: "unset" }}
+                >
+                  <Typography
+                    variant="subtitle1"
+                    color="primary"
+                    style={{ fontWeight: "bold" }}
+                  >
+                    FOOD
+                  </Typography>
+                  <Typography variant="h6" color="initial" gutterBottom>
+                    Fresh fish and onions
+                  </Typography>
+
+                  <Typography variant="body2" color="initial">
+                    Fresh food directly from our restaurant ready coocked for
+                    you and you familly
+                  </Typography>
+
+                  <Box
+                    display="flex"
+                    justifyContent="flex-end"
+                    position="relative"
+                    top="2em"
+                    right="-1em"
+                  >
+                    <IconButton>
+                      <ArrowForwardIcon />
+                    </IconButton>
+                  </Box>
+                </CardContent>
+              </Card>
+            </Grid>
+
+            <Grid item sm={12} lg={6}>
+              <Card
+                style={{
+                  display: "flex",
+                  width: "100%",
+                  boxShadow: "unset",
+                }}
+              >
+                <CardMedia
+                  image="/images/sheelah-brennan-UaeVmc51Ttw-unsplash.png"
+                  style={{ width: "180px", height: "200px" }}
+                />
+                <CardContent
+                  style={{ backgroundColor: "#F8F8F8", boxShadow: "unset" }}
+                >
+                  <Typography
+                    variant="subtitle1"
+                    color="primary"
+                    style={{ fontWeight: "bold" }}
+                  >
+                    DESERT
+                  </Typography>
+                  <Typography variant="h6" color="initial" gutterBottom>
+                    Chocolate cupcakes
+                  </Typography>
+
+                  <Typography variant="body2" color="initial">
+                    Fresh food directly from our restaurant ready coocked for
+                    you and you familly
+                  </Typography>
+
+                  <Box
+                    display="flex"
+                    justifyContent="flex-end"
+                    position="relative"
+                    top="2em"
+                    right="-1em"
+                  >
+                    <IconButton>
+                      <ArrowForwardIcon />
+                    </IconButton>
+                  </Box>
+                </CardContent>
+              </Card>
+            </Grid>
+
+            <Grid item sm={12} lg={6}>
+              <Card
+                style={{
+                  display: "flex",
+                  width: "100%",
+                  boxShadow: "unset",
+                }}
+              >
+                <CardMedia
+                  image="/images/sheelah-brennan-UaeVmc51Ttw-unsplash.png"
+                  style={{ width: "180px", height: "200px" }}
+                />
+                <CardContent
+                  style={{ backgroundColor: "#F8F8F8", boxShadow: "unset" }}
+                >
+                  <Typography
+                    variant="subtitle1"
+                    color="primary"
+                    style={{ fontWeight: "bold" }}
+                  >
+                    DESERT
+                  </Typography>
+                  <Typography variant="h6" color="initial" gutterBottom>
+                    Chocolate cupcakes
+                  </Typography>
+
+                  <Typography variant="body2" color="initial">
+                    Fresh food directly from our restaurant ready coocked for
+                    you and you familly
+                  </Typography>
+
+                  <Box
+                    display="flex"
+                    justifyContent="flex-end"
+                    position="relative"
+                    top="2em"
+                    right="-1em"
+                  >
+                    <IconButton>
+                      <ArrowForwardIcon />
+                    </IconButton>
+                  </Box>
+                </CardContent>
+              </Card>
+            </Grid>
+
+            <Grid item sm={12} lg={6}>
+              <Card
+                style={{
+                  display: "flex",
+                  width: "100%",
+                  boxShadow: "unset",
+                }}
+              >
+                <CardMedia
+                  image="/images/sheelah-brennan-UaeVmc51Ttw-unsplash.png"
+                  style={{ width: "180px", height: "200px" }}
+                />
+                <CardContent
+                  style={{ backgroundColor: "#F8F8F8", boxShadow: "unset" }}
+                >
+                  <Typography
+                    variant="subtitle1"
+                    color="primary"
+                    style={{ fontWeight: "bold" }}
+                  >
+                    DESERT
+                  </Typography>
+                  <Typography variant="h6" color="initial" gutterBottom>
+                    Chocolate cupcakes
+                  </Typography>
+
+                  <Typography variant="body2" color="initial">
+                    Fresh food directly from our restaurant ready coocked for
+                    you and you familly
+                  </Typography>
+
+                  <Box
+                    display="flex"
+                    justifyContent="flex-end"
+                    position="relative"
+                    top="2em"
+                    right="-1em"
+                  >
+                    <IconButton>
+                      <ArrowForwardIcon />
+                    </IconButton>
+                  </Box>
+                </CardContent>
+              </Card>
+            </Grid>
+          </Grid>
+        </Box>
+      </Container>
+    </div>
+  );
+}
+
+export function BlogPost() {
+  const classes = useStyles();
+
+  return (
+    <div style={{ margin: "8px 0" }}>
+      <Container>
+        <Typography
+          variant="caption"
+          color="primary"
+          style={{ fontWeight: 800 }}
+          gutterBottom
+        >
+          Blog
+        </Typography>
+
+        <Typography
+          variant="h2"
+          color="initial"
+          className={[classes.restaurantTitle].join(" ")}
+          gutterBottom
+        >
+          Read our newest blog post right away
+        </Typography>
+
+        <Box margin="64px 0">
+          <Grid container spacing={2}>
+            <Grid item sm={12} lg={4}>
+              <Card
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  width: "100%",
+                  boxShadow: "unset",
+                }}
+              >
+                <CardMedia
+                  image="/images/sheelah-brennan-UaeVmc51Ttw-unsplash.png"
+                  style={{ width: "100%", height: "200px" }}
+                />
+                <CardContent
+                  style={{ backgroundColor: "#F8F8F8", boxShadow: "unset" }}
+                >
+                  <Typography
+                    variant="subtitle1"
+                    color="primary"
+                    style={{ fontWeight: "bold" }}
+                  >
+                    FOOD AND LIFE
+                  </Typography>
+                  <Typography
+                    variant="h6"
+                    color="initial"
+                    gutterBottom
+                    style={{ fontWeight: 800 }}
+                  >
+                    Succeed in hotel business
+                  </Typography>
+
+                  <Typography variant="body2" color="initial">
+                    Fresh food directly from our restaurant ready coocked for
+                    you and you familly
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+
+            <Grid item sm={12} lg={4}>
+              <Card
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  width: "100%",
+                  boxShadow: "unset",
+                }}
+              >
+                <CardMedia
+                  image="/images/sheelah-brennan-UaeVmc51Ttw-unsplash.png"
+                  style={{ width: "100%", height: "200px" }}
+                />
+                <CardContent
+                  style={{ backgroundColor: "#F8F8F8", boxShadow: "unset" }}
+                >
+                  <Typography
+                    variant="subtitle1"
+                    color="primary"
+                    style={{ fontWeight: "bold" }}
+                  >
+                    COOKING
+                  </Typography>
+                  <Typography
+                    variant="h6"
+                    color="initial"
+                    gutterBottom
+                    style={{ fontWeight: 800 }}
+                  >
+                    Cooking delicious food
+                  </Typography>
+
+                  <Typography variant="body2" color="initial">
+                    Fresh food directly from our restaurant ready coocked for
+                    you and you familly
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+
+            <Grid item sm={12} lg={4}>
+              <Card
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  width: "100%",
+                  boxShadow: "unset",
+                }}
+              >
+                <CardMedia
+                  image="/images/sheelah-brennan-UaeVmc51Ttw-unsplash.png"
+                  style={{ width: "100%", height: "200px" }}
+                />
+                <CardContent
+                  style={{ backgroundColor: "#F8F8F8", boxShadow: "unset" }}
+                >
+                  <Typography
+                    variant="subtitle1"
+                    color="primary"
+                    style={{ fontWeight: "bold" }}
+                  >
+                    FOOD AND LIFE
+                  </Typography>
+                  <Typography
+                    variant="h6"
+                    color="initial"
+                    gutterBottom
+                    style={{ fontWeight: 800 }}
+                  >
+                    Succeed in hotel business
+                  </Typography>
+
+                  <Typography variant="body2" color="initial">
+                    Fresh food directly from our restaurant ready coocked for
+                    you and you familly
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+
+            <Grid item sm={12} lg={4}>
+              <Card
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  width: "100%",
+                  boxShadow: "unset",
+                }}
+              >
+                <CardMedia
+                  image="/images/sheelah-brennan-UaeVmc51Ttw-unsplash.png"
+                  style={{ width: "100%", height: "200px" }}
+                />
+                <CardContent
+                  style={{ backgroundColor: "#F8F8F8", boxShadow: "unset" }}
+                >
+                  <Typography
+                    variant="subtitle1"
+                    color="primary"
+                    style={{ fontWeight: "bold" }}
+                  >
+                    FRUITS
+                  </Typography>
+                  <Typography
+                    variant="h6"
+                    color="initial"
+                    gutterBottom
+                    style={{ fontWeight: 800 }}
+                  >
+                    Getting fresh fruits
+                  </Typography>
+
+                  <Typography variant="body2" color="initial">
+                    Fresh food directly from our restaurant ready coocked for
+                    you and you familly
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+
+            <Grid item sm={12} lg={4}>
+              <Card
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  width: "100%",
+                  boxShadow: "unset",
+                }}
+              >
+                <CardMedia
+                  image="/images/sheelah-brennan-UaeVmc51Ttw-unsplash.png"
+                  style={{ width: "100%", height: "200px" }}
+                />
+                <CardContent
+                  style={{ backgroundColor: "#F8F8F8", boxShadow: "unset" }}
+                >
+                  <Typography
+                    variant="subtitle1"
+                    color="primary"
+                    style={{ fontWeight: "bold" }}
+                  >
+                    COOKING
+                  </Typography>
+                  <Typography
+                    variant="h6"
+                    color="initial"
+                    gutterBottom
+                    style={{ fontWeight: 800 }}
+                  >
+                    Getting fresh fruits
+                  </Typography>
+
+                  <Typography variant="body2" color="initial">
+                    Fresh food directly from our restaurant ready coocked for
+                    you and you familly
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+
+            <Grid item sm={12} lg={4}>
+              <Card
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  width: "100%",
+                  boxShadow: "unset",
+                }}
+              >
+                <CardMedia
+                  image="/images/sheelah-brennan-UaeVmc51Ttw-unsplash.png"
+                  style={{ width: "100%", height: "200px" }}
+                />
+                <CardContent
+                  style={{ backgroundColor: "#F8F8F8", boxShadow: "unset" }}
+                >
+                  <Typography
+                    variant="subtitle1"
+                    color="primary"
+                    style={{ fontWeight: "bold" }}
+                  >
+                    FOOD AND LIFE
+                  </Typography>
+                  <Typography
+                    variant="h6"
+                    color="initial"
+                    gutterBottom
+                    style={{ fontWeight: 800 }}
+                  >
+                    Succeed in hotel business
+                  </Typography>
+
+                  <Typography variant="body2" color="initial">
+                    Fresh food directly from our restaurant ready coocked for
+                    you and you familly
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+          </Grid>
+        </Box>
+      </Container>
+    </div>
+  );
+}
+
+export function Photos() {
+  const classes = useStyles();
+
+  return (
+    <div style={{ margin: "8px 0 0 0" }}>
+      <Container>
+        <Typography
+          variant="caption"
+          color="primary"
+          style={{ fontWeight: 800 }}
+          gutterBottom
+        >
+          PHOTOS
+        </Typography>
+
+        <Typography
+          variant="h2"
+          color="initial"
+          className={[classes.restaurantTitle].join(" ")}
+          gutterBottom
+        >
+          See our latest photos from restaurant and hotel
+        </Typography>
+      </Container>
+
+      <Box margin="64px 0 0 0">
+        <Grid container spacing={0}>
+          <Grid item xs={12} lg={3}>
+            <Box width="100%">
+              <img
+                src="/images/eddi-aguirre-ZAVHbpOn4Jk-unsplash@2x.png"
+                alt="photo"
+                style={{ width: "100%" }}
+              />
+            </Box>
+          </Grid>
+          <Grid item xs={12} lg={3}>
+            <Box width="100%">
+              <img
+                src="/images/eddi-aguirre-ZAVHbpOn4Jk-unsplash@2x.png"
+                alt="photo"
+                style={{ width: "100%" }}
+              />
+            </Box>
+          </Grid>
+          <Grid item xs={12} lg={3}>
+            <Box width="100%">
+              <img
+                src="/images/rhema-kallianpur-jbJ-_hw2yag-unsplash@2x.png"
+                alt="photo"
+                style={{ width: "100%" }}
+              />
+            </Box>
+          </Grid>
+          <Grid item xs={12} lg={3}>
+            <Box width="100%">
+              <img
+                src="/images/eddi-aguirre-ZAVHbpOn4Jk-unsplash@2x.png"
+                alt="photo"
+                style={{ width: "100%" }}
+              />
+            </Box>
+          </Grid>
+        </Grid>
+      </Box>
+    </div>
+  );
+}
+
+export function AboutSecond() {
+  const classes = useStyles();
+
+  return (
+    <div style={{ margin: "8px 0" }}>
+      <Container>
+        <Typography
+          variant="caption"
+          color="primary"
+          style={{ fontWeight: 800 }}
+          gutterBottom
+        >
+          Restaurant
+        </Typography>
+
+        <Typography
+          variant="h2"
+          color="initial"
+          className={[classes.restaurantTitle].join(" ")}
+          gutterBottom
+        >
+          Explore our menu and eat what you want
+        </Typography>
+
+        <Box margin="64px 0">
+          <Grid container spacing={3}>
+            <Grid item sm={12} lg={6}>
+              <Card
+                style={{
+                  display: "flex",
+                  width: "100%",
+                  boxShadow: "unset",
+                }}
+              >
+                <CardMedia
+                  image="/images/sheelah-brennan-UaeVmc51Ttw-unsplash.png"
+                  style={{ width: "180px", height: "200px" }}
+                />
+                <CardContent
+                  style={{
+                    backgroundColor: "#F8F8F8",
+                    boxShadow: "unset",
+                    display: "flex",
+                    paddingTop: 0,
+                    paddingBottom: 0,
+                  }}
+                >
+                  <Box paddingTop="16px">
+                    <Typography
+                      variant="subtitle1"
+                      color="primary"
+                      style={{ fontWeight: "bold" }}
+                    >
+                      Big
+                    </Typography>
+                    <Typography variant="h6" color="initial" gutterBottom>
+                      Spacious Room
+                    </Typography>
+
+                    <Typography variant="body2" color="initial">
+                      Fresh food directly from our restaurant ready coocked for
+                      you and you familly
+                    </Typography>
+                  </Box>
+
+                  <Box
+                    display="flex"
+                    justifyContent="flex-end"
+                    position="relative"
+                    right="-1em"
+                  >
+                    <IconButton>
+                      <ArrowForwardIcon />
+                    </IconButton>
+                  </Box>
+                </CardContent>
+              </Card>
+            </Grid>
+
+            <Grid item sm={12} lg={6}>
+              <Card
+                style={{
+                  display: "flex",
+                  width: "100%",
+                  boxShadow: "unset",
+                }}
+              >
+                <CardMedia
+                  image="/images/sheelah-brennan-UaeVmc51Ttw-unsplash.png"
+                  style={{ width: "180px", height: "200px" }}
+                />
+                <CardContent
+                  style={{
+                    backgroundColor: "#F8F8F8",
+                    boxShadow: "unset",
+                    display: "flex",
+                    paddingTop: 0,
+                    paddingBottom: 0,
+                  }}
+                >
+                  <Box paddingTop="16px">
+                    <Typography
+                      variant="subtitle1"
+                      color="primary"
+                      style={{ fontWeight: "bold" }}
+                    >
+                      Big
+                    </Typography>
+                    <Typography variant="h6" color="initial" gutterBottom>
+                      Spacious Room
+                    </Typography>
+
+                    <Typography variant="body2" color="initial">
+                      Fresh food directly from our restaurant ready coocked for
+                      you and you familly
+                    </Typography>
+                  </Box>
+
+                  <Box
+                    display="flex"
+                    justifyContent="flex-end"
+                    position="relative"
+                    right="-1em"
+                  >
+                    <IconButton>
+                      <ArrowForwardIcon />
+                    </IconButton>
+                  </Box>
+                </CardContent>
+              </Card>
+            </Grid>
+
+            <Grid item sm={12} lg={6}>
+              <Card
+                style={{
+                  display: "flex",
+                  width: "100%",
+                  boxShadow: "unset",
+                }}
+              >
+                <CardMedia
+                  image="/images/sheelah-brennan-UaeVmc51Ttw-unsplash.png"
+                  style={{ width: "180px", height: "200px" }}
+                />
+                <CardContent
+                  style={{
+                    backgroundColor: "#F8F8F8",
+                    boxShadow: "unset",
+                    display: "flex",
+                    paddingTop: 0,
+                    paddingBottom: 0,
+                  }}
+                >
+                  <Box paddingTop="16px">
+                    <Typography
+                      variant="subtitle1"
+                      color="primary"
+                      style={{ fontWeight: "bold" }}
+                    >
+                      Big
+                    </Typography>
+                    <Typography variant="h6" color="initial" gutterBottom>
+                      Spacious Room
+                    </Typography>
+
+                    <Typography variant="body2" color="initial">
+                      Fresh food directly from our restaurant ready coocked for
+                      you and you familly
+                    </Typography>
+                  </Box>
+
+                  <Box
+                    display="flex"
+                    justifyContent="flex-end"
+                    position="relative"
+                    right="-1em"
+                  >
+                    <IconButton>
+                      <ArrowForwardIcon />
+                    </IconButton>
+                  </Box>
+                </CardContent>
+              </Card>
+            </Grid>
+
+            <Grid item sm={12} lg={6}>
+              <Card
+                style={{
+                  display: "flex",
+                  width: "100%",
+                  boxShadow: "unset",
+                }}
+              >
+                <CardMedia
+                  image="/images/sheelah-brennan-UaeVmc51Ttw-unsplash.png"
+                  style={{ width: "180px", height: "200px" }}
+                />
+                <CardContent
+                  style={{
+                    backgroundColor: "#F8F8F8",
+                    boxShadow: "unset",
+                    display: "flex",
+                    paddingTop: 0,
+                    paddingBottom: 0,
+                  }}
+                >
+                  <Box paddingTop="16px">
+                    <Typography
+                      variant="subtitle1"
+                      color="primary"
+                      style={{ fontWeight: "bold" }}
+                    >
+                      Big
+                    </Typography>
+                    <Typography variant="h6" color="initial" gutterBottom>
+                      Spacious Room
+                    </Typography>
+
+                    <Typography variant="body2" color="initial">
+                      Fresh food directly from our restaurant ready coocked for
+                      you and you familly
+                    </Typography>
+                  </Box>
+
+                  <Box
+                    display="flex"
+                    justifyContent="flex-end"
+                    position="relative"
+                    right="-1em"
+                  >
+                    <IconButton>
+                      <ArrowForwardIcon />
+                    </IconButton>
+                  </Box>
+                </CardContent>
+              </Card>
+            </Grid>
+
+            <Grid item sm={12} lg={6}>
+              <Card
+                style={{
+                  display: "flex",
+                  width: "100%",
+                  boxShadow: "unset",
+                }}
+              >
+                <CardMedia
+                  image="/images/sheelah-brennan-UaeVmc51Ttw-unsplash.png"
+                  style={{ width: "180px", height: "200px" }}
+                />
+                <CardContent
+                  style={{
+                    backgroundColor: "#F8F8F8",
+                    boxShadow: "unset",
+                    display: "flex",
+                    paddingTop: 0,
+                    paddingBottom: 0,
+                  }}
+                >
+                  <Box paddingTop="16px">
+                    <Typography
+                      variant="subtitle1"
+                      color="primary"
+                      style={{ fontWeight: "bold" }}
+                    >
+                      Big
+                    </Typography>
+                    <Typography variant="h6" color="initial" gutterBottom>
+                      Spacious Room
+                    </Typography>
+
+                    <Typography variant="body2" color="initial">
+                      Fresh food directly from our restaurant ready coocked for
+                      you and you familly
+                    </Typography>
+                  </Box>
+
+                  <Box
+                    display="flex"
+                    justifyContent="flex-end"
+                    position="relative"
+                    right="-1em"
+                  >
+                    <IconButton>
+                      <ArrowForwardIcon />
+                    </IconButton>
+                  </Box>
+                </CardContent>
+              </Card>
+            </Grid>
+
+            <Grid item sm={12} lg={6}>
+              <Card
+                style={{
+                  display: "flex",
+                  width: "100%",
+                  boxShadow: "unset",
+                }}
+              >
+                <CardMedia
+                  image="/images/sheelah-brennan-UaeVmc51Ttw-unsplash.png"
+                  style={{ width: "180px", height: "200px" }}
+                />
+                <CardContent
+                  style={{
+                    backgroundColor: "#F8F8F8",
+                    boxShadow: "unset",
+                    display: "flex",
+                    paddingTop: 0,
+                    paddingBottom: 0,
+                  }}
+                >
+                  <Box paddingTop="16px">
+                    <Typography
+                      variant="subtitle1"
+                      color="primary"
+                      style={{ fontWeight: "bold" }}
+                    >
+                      Big
+                    </Typography>
+                    <Typography variant="h6" color="initial" gutterBottom>
+                      Spacious Room
+                    </Typography>
+
+                    <Typography variant="body2" color="initial">
+                      Fresh food directly from our restaurant ready coocked for
+                      you and you familly
+                    </Typography>
+                  </Box>
+
+                  <Box
+                    display="flex"
+                    justifyContent="flex-end"
+                    position="relative"
+                    right="-1em"
+                  >
+                    <IconButton>
+                      <ArrowForwardIcon />
+                    </IconButton>
+                  </Box>
+                </CardContent>
+              </Card>
+            </Grid>
+
+            <Grid item sm={12} lg={6}>
+              <Card
+                style={{
+                  display: "flex",
+                  width: "100%",
+                  boxShadow: "unset",
+                }}
+              >
+                <CardMedia
+                  image="/images/sheelah-brennan-UaeVmc51Ttw-unsplash.png"
+                  style={{ width: "180px", height: "200px" }}
+                />
+                <CardContent
+                  style={{
+                    backgroundColor: "#F8F8F8",
+                    boxShadow: "unset",
+                    display: "flex",
+                    paddingTop: 0,
+                    paddingBottom: 0,
+                  }}
+                >
+                  <Box paddingTop="16px">
+                    <Typography
+                      variant="subtitle1"
+                      color="primary"
+                      style={{ fontWeight: "bold" }}
+                    >
+                      Big
+                    </Typography>
+                    <Typography variant="h6" color="initial" gutterBottom>
+                      Spacious Room
+                    </Typography>
+
+                    <Typography variant="body2" color="initial">
+                      Fresh food directly from our restaurant ready coocked for
+                      you and you familly
+                    </Typography>
+                  </Box>
+
+                  <Box
+                    display="flex"
+                    justifyContent="flex-end"
+                    position="relative"
+                    right="-1em"
+                  >
+                    <IconButton>
+                      <ArrowForwardIcon />
+                    </IconButton>
+                  </Box>
+                </CardContent>
+              </Card>
+            </Grid>
+
+            <Grid item sm={12} lg={6}>
+              <Card
+                style={{
+                  display: "flex",
+                  width: "100%",
+                  boxShadow: "unset",
+                }}
+              >
+                <CardMedia
+                  image="/images/sheelah-brennan-UaeVmc51Ttw-unsplash.png"
+                  style={{ width: "180px", height: "200px" }}
+                />
+                <CardContent
+                  style={{
+                    backgroundColor: "#F8F8F8",
+                    boxShadow: "unset",
+                    display: "flex",
+                    paddingTop: 0,
+                    paddingBottom: 0,
+                  }}
+                >
+                  <Box paddingTop="16px">
+                    <Typography
+                      variant="subtitle1"
+                      color="primary"
+                      style={{ fontWeight: "bold" }}
+                    >
+                      Big
+                    </Typography>
+                    <Typography variant="h6" color="initial" gutterBottom>
+                      Spacious Room
+                    </Typography>
+
+                    <Typography variant="body2" color="initial">
+                      Fresh food directly from our restaurant ready coocked for
+                      you and you familly
+                    </Typography>
+                  </Box>
+
+                  <Box
+                    display="flex"
+                    justifyContent="flex-end"
+                    position="relative"
+                    right="-1em"
+                  >
+                    <IconButton>
+                      <ArrowForwardIcon />
+                    </IconButton>
+                  </Box>
+                </CardContent>
+              </Card>
+            </Grid>
+          </Grid>
+        </Box>
+      </Container>
     </div>
   );
 }

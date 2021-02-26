@@ -36,6 +36,21 @@ const useStyles = makeStyles((theme) =>
         padding: "32px 0",
       },
     },
+    secSearchContainer: {
+      position: "relative",
+      zIndex: 5,
+      display: "flex",
+      margin: "0 auto",
+      padding: "32px 16px",
+      width: "100%",
+      flexDirection: "column",
+
+      [theme.breakpoints.up("md")]: {
+        alignItems: "flex-end",
+        flexDirection: "row",
+        padding: "32px 0",
+      },
+    },
     input: {
       backgroundColor: "#EEEEEE",
       width: "100%",
@@ -115,5 +130,77 @@ export default function Search() {
         </Paper>
       </Container>
     </div>
+  );
+}
+
+export function SearchSecondary() {
+  const classes = useStyles();
+  const isHandheld = useMediaQuery(theme.breakpoints.down("sm"));
+
+  return (
+    <Box width="100%" bgcolor="#F8F8F8" padding="46px 0" marginBottom="16px">
+      <Container>
+        <Box className={classes.secSearchContainer} alignItems="center">
+          {" "}
+          <Grid container spacing={3}>
+            <Grid item xs={12} lg={4}>
+              <label htmlFor="checkIn">
+                <Typography variant="caption" color="primary">
+                  Check in date
+                </Typography>
+              </label>
+
+              <InputBase
+                placeholder="check in date"
+                className={classes.input}
+                id="checkIn"
+              />
+            </Grid>
+
+            <Grid item xs={12} lg={4}>
+              <label htmlFor="checkOut">
+                <Typography variant="caption" color="primary">
+                  Check out date
+                </Typography>
+              </label>
+
+              <InputBase
+                placeholder="check out date"
+                className={classes.input}
+                id="checkOut"
+              />
+            </Grid>
+
+            <Grid item xs={12} lg={4}>
+              <label htmlFor="rooms">
+                <Typography variant="caption" color="primary">
+                  Rooms
+                </Typography>
+              </label>
+
+              <InputBase
+                placeholder="rooms"
+                className={classes.input}
+                id="rooms"
+              />
+            </Grid>
+          </Grid>
+          <Box
+            color={"#fff"}
+            marginTop={isHandheld ? "32px" : "0"}
+            marginLeft={isHandheld ? "0" : "15px"}
+          >
+            <Button
+              variant="contained"
+              size="large"
+              endIcon={<SendIcon />}
+              fullWidth={isHandheld}
+            >
+              Submit
+            </Button>
+          </Box>
+        </Box>
+      </Container>
+    </Box>
   );
 }
